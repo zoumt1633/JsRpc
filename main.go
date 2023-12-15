@@ -157,7 +157,7 @@ func GQueryFunc(client *Clients, funcName string, param string, resChan chan<- s
 	}
 	// 循环完了还是没有数据，那就超时退出
 	if true != resultFlag {
-		resChan <- "黑脸怪：timeout"
+		resChan <- "tiger：timeout"
 	}
 	defer func() {
 		close(resChan)
@@ -210,7 +210,7 @@ func checkTimeout(c2 chan string) {
 		time.Sleep(time.Millisecond * 100)
 	}
 	// 循环完了还是没有数据，那就超时退出
-	c2 <- "黑脸怪：timeout"
+	c2 <- "tiger：timeout"
 }
 
 func Execjs(c *gin.Context) {
@@ -246,7 +246,7 @@ func Execjs(c *gin.Context) {
 }
 
 func getList(c *gin.Context) {
-	resList := "黑脸怪:\r\n\t"
+	resList := "tiger:\r\n\t"
 	hlSyncMap.Range(func(key, value interface{}) bool {
 		resList += key.(string) + "\r\n\t"
 		return true
@@ -255,7 +255,7 @@ func getList(c *gin.Context) {
 }
 
 func Index(c *gin.Context) {
-	c.String(200, "你好，我是黑脸怪~")
+	c.String(200, "你好，我是tiger~")
 }
 
 func TlsHandler() gin.HandlerFunc {
