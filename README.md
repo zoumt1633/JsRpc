@@ -234,3 +234,15 @@ print(res.text)
 
 - [ ] ssl Docker Deploy
 - [ ] K8s Deploy
+
+
+## 食用方法
+
+### 控制台直接注入方法
+
+1. 将`resouces/JsEnv.js`代码完全复制，在浏览器`f12`控制台直接粘贴回车即可
+2. 将上方的**注入ws与方法** 同样的复制然后在控制台粘贴回车
+
+### 油猴脚本
+
+推荐使用油猴脚本在浏览器外部挂载js,示例代码：`https://greasyfork.org/zh-CN/scripts/440234-%E6%8A%96%E9%9F%B3json-rpc`
