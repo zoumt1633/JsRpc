@@ -236,7 +236,7 @@ print(res.text)
 - [ ] K8s Deploy
 
 
-## 食用方法
+## 食用方法(`https://gitee.com/ripperTs/jsrpc`)
 
 ### 控制台直接注入方法
 
